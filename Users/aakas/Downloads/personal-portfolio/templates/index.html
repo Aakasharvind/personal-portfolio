@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Portfolio{% endblock %}
+
+{% block content %}
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Profile Picture" class="profile-pic">
+            <h1>Aakash L S</h1>
+            <h2>Software Developer @ BNY | Anna University - <span class="gold-medal">🏅</span> Gold Medallist | Best Male Outgoing Student of MIT, AU</h2>
+        </div>
+
+        <div class="profile-content">
+            <section class="bio">
+                <h3>About Me</h3>
+                <p>
+                    Software Engineer at BNY, working with Java, Spring Boot, Kafka, Angular, and Shell scripting, 
+                    while now delving into mobile app development. I began as a summer intern, extended into a 6-month winter 
+                    internship, and transitioned into a full-time role in July 2024.
+                </p>
+                <p>
+                    Graduated as the <b>First Rank Holder</b> with a <b>Gold Medal</b> in BTech Information Technology from Anna University. 
+                    Awarded <b>Best Male Outgoing Student</b> from MIT, Anna University.
+                </p>
+            </section>
+
+            <section class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><b>Anna University, MIT Campus,Chennai</b> - BTech in Information Technology (9.86/10) 🏅 University Gold Medallist</li>
+                    <li><b>Army Public School Chennai </b>  97%-CBSE Class XII (2010-2020)</li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <h3>Skills</h3>
+                <div class="skill-icons">
+                    <img src="{{ url_for('static', filename='images/springboot.png') }}" alt="Spring Boot">
+                    <img src="{{ url_for('static', filename='images/kafka.png') }}" alt="Kafka">
+                    <img src="{{ url_for('static', filename='images/java.png') }}" alt="Java">
+                    <img src="{{ url_for('static', filename='images/oraclesql.png') }}" alt="Oracle">
+                    <img src="{{ url_for('static', filename='images/angular.png') }}" alt="Angular">
+                    <img src="{{ url_for('static', filename='images/C.jpg') }}" alt="C">
+                    <img src="{{ url_for('static', filename='images/C++.jpg') }}" alt="C++">
+                    <img src="{{ url_for('static', filename='images/node_express.jpg') }}" alt="Node.js & Express">
+                    <img src="{{ url_for('static', filename='images/python.jpg') }}" alt="Python">
+                    <img src="{{ url_for('static', filename='images/Docker.jpg') }}" alt="Docker">
+                    <img src="{{ url_for('static', filename='images/shell.png') }}" alt="Shell Script">
+                    <img src="{{ url_for('static', filename='images/mobile.jpg') }}" alt="Mobile Development">
+                    <img src="{{ url_for('static', filename='images/dsa.png') }}" alt="DSA">
+                    <img src="{{ url_for('static', filename='images/system_design.jpg') }}" alt="System Design">
+                    <img src="{{ url_for('static', filename='images/git.png') }}" alt="Git">
+                    <img src="{{ url_for('static', filename='images/azure.jpg') }}" alt="Azure">
+                    <img src="{{ url_for('static', filename='images/aws.png') }}" alt="AWS">
+                    <img src="{{ url_for('static', filename='images/mongodb.jpg') }}" alt="MongoDB">
+                    <img src="{{ url_for('static', filename='images/html-css.png') }}" alt="HTML-CSS">
+                    <img src="{{ url_for('static', filename='images/js.png') }}" alt="Javascript">
+                </div>
+            </section>
+
+            <!-- <section class="certifications">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Top 10 in India in Hindi Certifications (Certificate, Diploma, Advanced Diploma) - CHD</li>
+                    <li>Hindi Prachar Sabha - Completed up to Praveen Uttaradh</li>
+                    <li>9 Sanskrit Certifications - Samskrita Bharati & Bharatiya Vidya Bhavan</li>
+                    <li>Piano - Six Grades, Trinity College London</li>
+                </ul>
+            </section> -->
+
+            <section class="hobbies">
+                <h3>Beyond Code</h3>
+                <p>
+                    Apart from coding, I enjoy playing the piano, chess, cricket, badminton, and carrom. 
+                    I also explored dubbing for short films and cartoons as a child, driven by curiosity and learning.
+                </p>
+            </section>
+            <section class="contact">
+                <h3>Professional Profiles</h3>
+                <div class="contact-links">
+                    <a href="https://github.com/Aakasharvind" target="_blank">
+                        <img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub">
+                    </a>
+                    <a href="https://leetcode.com/u/ls_aakash_ls/" target="_blank">
+                        <img src="{{ url_for('static', filename='images/leetcode.png') }}" alt="LeetCode">
+                    </a>
+                    <a href="https://www.linkedin.com/in/aakash-l-s-/" target="_blank">
+                        <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}

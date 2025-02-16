@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Learnings - Portfolio{% endblock %}
+
+{% block content %}
+    <h1>My Learnings 📚</h1>
+    <div class="learning-grid">
+        <a href="https://github.com/Aakasharvind/Kafka-Demo" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/kafka.jpg') }}" alt="Kafka">
+            <p>Kafka Demo proj</p>
+        </a>
+        <a href="https://github.com/Aakasharvind/System-Design/blob/main/Preparation%20Notes" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/system_design.jpg') }}" alt="System Design">
+            <p>System Design</p>
+        </a>
+        <a href="https://neetcode.io/practice" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/dsa.png') }}" alt="DSA">
+            <p>Data Structures & Algorithms</p>
+        </a>
+        <a href="https://github.com/Aakasharvind/Nodejs-prac" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/node_express.jpg') }}" alt="Node & Express" >
+            <p>Node.js & Express</p>
+        </a>
+
+        <a href="https://github.com/Aakasharvind/angular-todo-app/blob/master/Angular_Instruction.txt" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/angular.png') }}" alt="Angular">
+            <p>Angular</p>
+        </a>
+
+        <a href="https://github.com/Aakasharvind/Flask-TodoApp-Aakash/blob/main/Flask/flask_insructions" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/flask.png') }}" alt="Flask">
+            <p>Flask</p>
+        </a>
+
+        <a href="https://github.com/Aakasharvind/devops-zero-to-hero" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/devops.png') }}" alt="Devops">
+            <p>Devops</p>
+        </a>
+
+        <a href="https://github.com/Aakasharvind/Docker-hands-on" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/Docker.jpg') }}" alt="Docker">
+            <p>Docker</p>
+        </a>
+
+        <a href="https://github.com/Aakasharvind/AZ-900/blob/main/Instructions" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/azure.jpg') }}" alt="Azure Basics">
+            <p>Azure Basics</p>
+        </a>
+        <a href="https://github.com/Aakasharvind/git-try/blob/master/Git%20commands.txt" class="learning-card" target="_blank">
+            <img src="{{ url_for('static', filename='images/git.png') }}" alt="Git basics">
+            <p>Git Basic Commands</p>
+        </a>
+    </div>
+{% endblock %}
