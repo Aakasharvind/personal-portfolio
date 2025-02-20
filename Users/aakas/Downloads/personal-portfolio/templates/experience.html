@@ -3,17 +3,84 @@
 {% block title %}Experience - Portfolio{% endblock %}
 
 {% block content %}
-    <h1>My Work Experience 💼</h1>
-    <ul class="experience-list">
-        <li>👨‍💻 **Software Engineer - BNY Pershing** (July 2024 - Present)</li>
-        <ul>
-            <li>🚀 Transitioning to Mobile Development (Android, iOS, Ionic)</li>
-            <li>⚡ Worked on Kafka, Spring Boot, Angular, PostgreSQL, Shell Scripting</li>
-        </ul>
-        <li>🎓 **Winter Internship - BNY Pershing** (Jan 2024 - June 2024)</li>
-        <ul>
-            <li>🔍 Database Team (Oracle, SQL, Performance Optimization)</li>
-        </ul>
-        <li>☀️ **Summer Internship - BNY Pershing**</li>
-    </ul>
+    <div class="experience-container">
+        <h1>Professional Experience 💼</h1>
+
+        <div class="timeline">
+            <!-- Full-Time Software Engineer -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/bny.png') }}" alt="BNY Pershing Logo">
+                </div>
+                <div class="timeline-content">
+                    <h2>Software Engineer - BNY Pershing</h2>
+                    <h4>July 2024 - Present</h4>
+                    <p>Working on <b>SQL, Kafka, Spring Boot, Angular, Microservices</b> and transitioning into <b>Mobile Development (Android & iOS)</b>.</p>
+                </div>
+            </div>
+
+            <!-- Winter Internship -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/bny.png') }}" alt="BNY Pershing Logo">
+                </div>
+                <div class="timeline-content">
+                    <h2>Winter Internship - BNY Pershing</h2>
+                    <h4>Jan 2024 - June 2024</h4>
+                    <p>Worked on <b>SQL, Kafka, Spring Boot, Angular, and Microservices</b> in the Database team.</p>
+                </div>
+            </div>
+
+            <!-- Summer Internship -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/bny.png') }}" alt="BNY Pershing Logo">
+                </div>
+                <div class="timeline-content">
+                    <h2>Summer Internship - BNY Pershing</h2>
+                    <h4>June 2023 - July 2023</h4>
+                    <p>Worked on <b>Spring Boot and Angular</b>, gaining hands-on experience in full-stack development.</p>
+                </div>
+            </div>
+
+            <!-- Content Head - PDA -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/pda.jpg') }}" alt="Personality Development Association">
+                </div>
+                <div class="timeline-content">
+                    <h2>Content Head - Personality Development Association</h2>
+                    <h4>2023 - 2024</h4>
+                    <p>Managed content strategies, event planning, and technical discussions for university students.</p>
+                </div>
+            </div>
+
+            <!-- Yoga Club -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/yoga.jpg') }}" alt="Yoga Club">
+                </div>
+                <div class="timeline-content">
+                    <h2>Member - Yoga Club</h2>
+                    <h4>2021 - 2024</h4>
+                    <p>Active member of the university yoga club, participating in wellness and mindfulness programs.</p>
+                </div>
+            </div>
+
+            <!-- ML Intern - SkillVertex -->
+            <div class="timeline-item">
+                <div class="timeline-logo">
+                    <img src="{{ url_for('static', filename='images/skillvertex.jpg') }}" alt="SkillVertex Logo">
+                </div>
+                <div class="timeline-content">
+                    <h2>ML Intern - SkillVertex</h2>
+                    <h4>July 2022 - August 2022</h4>
+                    <p>Worked on <b>EDA (Exploratory Data Analysis), Classification Models, and Machine Learning</b> techniques.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 {% endblock %}
+
+<script src="{{ url_for('static', filename='js/experience.js') }}"></script>
