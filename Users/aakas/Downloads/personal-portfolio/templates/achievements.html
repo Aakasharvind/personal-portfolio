@@ -3,12 +3,234 @@
 {% block title %}Achievements - Portfolio{% endblock %}
 
 {% block content %}
+  <div class="achievements-container" >
     <h1>My Achievements 🏆</h1>
-    <ul class="achievement-list">
-        <li>🏅 Anna University Gold Medalist (2024) - First Rank Holder</li>
-        <li>🏆 Best Outgoing Student Award (2024)</li>
-        <li>📜 Published Journal in IJCA</li>
-        <li>🎓 Top 10 in Central Hindi Directorate Certifications</li>
-        <li>🎹 Completed Six Grades in Piano, Trinity College London</li>
-    </ul>
+    
+    <!-- Achievement 1: Anna University Gold Medal -->
+    <details class="achievement-item">
+      <summary>
+        <span class="icon">🏅</span>
+        Anna University Gold Medalist (2024) - First Rank Holder
+      </summary>
+      <div class="achievement-details">
+        <div class="achievement-images">
+          <img src="{{ url_for('static', filename='images/clg-comp/gold_first.jpeg') }}" alt="Gold Medal Award 1">
+          <img src="{{ url_for('static', filename='images/clg-comp/gold_medal.jpeg') }}" alt="Gold Medal Award 2">
+        </div>
+        <p class="achievement-description">
+          Awarded the Anna University Gold Medal for being the First Rank Holder among the University Departments (BTech, IT). Graduated with a CGPA of 9.86.
+        </p>
+      </div>
+    </details>
+
+    <!-- Achievement 2: Best Male Outgoing Student Award -->
+    <details class="achievement-item">
+      <summary>
+        <span class="icon">🏆</span>
+        Best Male Outgoing Student Award - MIT, AU (2024)
+      </summary>
+      <div class="achievement-details">
+        <div class="achievement-images">
+          <img src="{{ url_for('static', filename='images/clg-comp/bos_award.jpg') }}" alt="Best Outgoing Award 1">
+          <img src="{{ url_for('static', filename='images/clg-comp/bos_certif.jpeg') }}" alt="Best Outgoing Award 2">
+        </div>
+        <p class="achievement-description">
+          Awarded for all-round performance in academics, co-curricular activities, excelling in competitive exams, winning numerous technical and inter-college competitions, securing internships and placements, and maintaining exemplary conduct.
+        </p>
+      </div>
+    </details>
+
+    <!-- Achievement 3: Inter/Intracollege Competitions -->
+    <details class="achievement-item">
+      <summary>
+        <span class="icon">💻</span>
+        Won Various Inter & Intra College Competitions and GDs
+      </summary>
+      <div class="achievement-details">
+        <div class="achievement-competitions">
+          <!-- Each competition can be styled as a card -->
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/codex.jpg') }}" alt="CODEX">
+            <div class="competition-info">
+              <h4>CODEX</h4>
+              <p>National level INTERCOLLEGE Coding Competition conducted by ACM-CEG.</p>
+              <small>Issued by ACM-CEG Mar 2023</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="CodeBytes">
+            <div class="competition-info">
+              <h4>CodeBytes</h4>
+              <p>Intercollegiate coding challenge.</p>
+              <small>Issued by CSMIT · Feb 2023</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/code-combat.jpg') }}" alt="Code Combat">
+            <div class="competition-info">
+              <h4>Code Combat</h4>
+              <p>Winner in a competitive coding event.</p>
+              <small>Issued by EEA, MIT -Apocalypse Nov 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/discode.jpg') }}" alt="Discode">
+            <div class="competition-info">
+              <h4>Discode</h4>
+              <p>Winner.</p>
+              <small>Issued by EEA,MIT - Apocalypse Nov 2022</small>
+            </div>
+          </div>
+
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/prayatna-mathomania.jpeg') }}" alt="Mathomania">
+            <div class="competition-info">
+              <h4>Mathomania Coding</h4>
+              <p>Mathematics competition.</p>
+              <small>Issued by Dept of Computer technology, Prayatna · May 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="Reverse Coding">
+            <div class="competition-info">
+              <h4>Reverse Coding</h4>
+              <p>Competitive reverse coding challenge.</p>
+              <small>Issued by CSMIT, Enigma · Nov 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="Street Coding">
+            <div class="competition-info">
+              <h4>Street Coding</h4>
+              <p>Competitive street coding event.</p>
+              <small>Issued by CSMIT, Enigma · Nov 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="Group Discussion">
+            <div class="competition-info">
+              <h4>Group Discussion</h4>
+              <p>Winner in group discussion competitions.</p>
+              <small>Issued by Personality Development Association, MIT · Oct 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/prayatna-code-n-chaos.jpeg') }}" alt="Code and Chaos">
+            <div class="competition-info">
+              <h4>Code and Chaos</h4>
+              <p>Competitive coding event.</p>
+              <small>Issued by MIT - Prayatna Symposium · May 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/efocus-code-carnival.jpeg') }}" alt="Code Carnival">
+            <div class="competition-info">
+              <h4>Code Carnival</h4>
+              <p>Inter-college coding carnival.</p>
+              <small>Issued by MIT - Electrofocus · May 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="Decoding">
+            <div class="competition-info">
+              <h4>Decoding</h4>
+              <p>Competitive decoding event.</p>
+              <small>Issued by MIT - Carte Blanche · May 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/efocus-mathmaverick.jpeg') }}" alt="Math Maverick">
+            <div class="competition-info">
+              <h4>Math Maverick</h4>
+              <p>Mathematics competition.</p>
+              <small>Issued by MIT - Electrofocus · May 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/win.jpg') }}" alt="Pythonite">
+            <div class="competition-info">
+              <h4>Pythonite (Coding)</h4>
+              <p>Coding challenge.</p>
+              <small>Issued by MIT - Samhita Intercollege Symposium · Apr 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/clg-comp/algo-apt.jpeg') }}" alt="Algo Stream Aptitude Test">
+            <div class="competition-info">
+              <h4>Algo Stream Aptitude Test</h4>
+              <p>Aptitude test for coding.</p>
+              <small>Issued by MIT - Personality Development Association · Feb 2022</small>
+            </div>
+          </div>
+          <div class="competition-card">
+            <img src="{{ url_for('static', filename='images/commentary.jpg') }}" alt="Commentary Competition">
+            <div class="competition-info">
+              <h4>Commentary Competition</h4>
+              <p>Winner in a commentary challenge.</p>
+              <small>Issued by Personality Development Association · Jan 2021</small>
+            </div>
+          </div>
+          <!-- You can add more competition cards as needed -->
+        </div>
+      </div>
+    </details>
+    
+    <!-- Achievement 4: Scholarships for Academics -->
+    <details class="achievement-item">
+      <summary>
+        <span class="icon">🎖</span>
+        Awarded Multiple Scholarships for Academic Excellence
+      </summary>
+      <div class="achievement-details">
+        <div class="achievement-images">
+          <img src="{{ url_for('static', filename='images/clg-comp/silverjubilee.jpeg') }}" alt="Silver Jubilee Award">
+          <img src="{{ url_for('static', filename='images/clg-comp/delhiMIT.jpeg') }}" alt="Delhi MIT Award">
+          <img src="{{ url_for('static', filename='images/clg-comp/msiyer.jpeg') }}" alt="MS Iyer Award">
+          <img src="{{ url_for('static', filename='images/clg-comp/kamakoti.jpeg') }}" alt="Kamakoti Scholarship">
+          <img src="{{ url_for('static', filename='images/clg-comp/rk.jpeg') }}" alt="RK Award">
+         
+        </div>
+        <p class="achievement-description">
+          Recognized with several scholarships for outstanding academic performance throughout my educational journey.
+        </p>
+      </div>
+    </details>
+
+    <!-- Achievement 5: Top 10 in Central Hindi Directorate Certifications -->
+    <details class="achievement-item">
+      <summary>
+        <span class="icon">🎓</span>
+        Top 10 in Central Hindi Directorate Certifications
+      </summary>
+      <div class="achievement-details">
+        <p class="achievement-description">
+          Achieved a top 10 ranking (nation-wide) in the Central Hindi Directorate Certifications, showcasing excellence in language proficiency.
+          Completed Certificate, Diploma and Advanced Diploma courses from Central Hindi Directorate.
+          Also Completed all Hindi Prachar Sabha courses uptill Praveen Uttaradh and Completed various Sanskrit courses from Bharatiya Vidya Bhavan and Samskrita Bharati.
+        </p>
+      </div>
+    </details>
+
+    <!-- Achievement 6: Completed Six Grades in Piano -->
+    <details class="achievement-item">
+        <summary>
+          <span class="icon">🎹</span>
+          Completed Six Grades in Piano - Trinity College London
+        </summary>
+        <div class="achievement-details">
+          <p class="achievement-description">
+            Successfully completed six grades in piano from Trinity College London, demonstrating dedication and musical talent. It is equivalent to a Level 3 qualification - advanced undergraduate level.
+            <br> <br>You can check out one of my keyboard videos below!
+          </p>
+          <div class="piano-video">
+            <a href="https://www.youtube.com/watch?v=xilPFWyZxa4" target="_blank">
+                <img src="{{ url_for('static', filename='images/keyboard.png') }}" alt="Keyboard Performance Thumbnail">
+            </a>
+          </div>
+        </div>
+      </details>
+
+  </div>
 {% endblock %}
+
+<script src="{{ url_for('static', filename='js/achievements.js') }}"></script>

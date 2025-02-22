@@ -3,11 +3,65 @@
 {% block title %}Certifications - Portfolio{% endblock %}
 
 {% block content %}
-    <h1>My Certifications 📜</h1>
-    <ul class="certification-list">
-        <li>🎖 Central Hindi Directorate - Certificate, Diploma & Advanced Diploma (Top 10 Rank)</li>
-        <li>🏆 Hindi Prachar Sabha - Praveen Uttaradh Certification</li>
-        <li>📜 9 Sanskrit Certifications from Samskrita Bharati & Bharatiya Vidya Bhavan</li>
-        <li>🎹 Trinity College London - Piano (Six Grades)</li>
-    </ul>
+  <div class="certifications-container">
+    <h1>Certifications</h1>
+    <div class="certifications-grid">
+      <!-- Certification 1: AZ-900 -->
+      <div class="certification-card">
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/AAKASHLS-8759/F18F0FB0ADC06359?sharingId=134B1F6775ED36E1" target="_blank">
+          <img src="{{ url_for('static', filename='images/certifications/az-900.jpg') }}" alt="AZ-900 Certification">
+          <p>AZ-900 Certification</p>
+        </a>
+      </div>
+
+      <!-- Certification 2: Intro to Generative AI -->
+      <div class="certification-card">
+        <a href="https://www.cloudskillsboost.google/public_profiles/549a1937-12af-46f4-910e-940307abe3ae/badges/7865558?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank">
+          <img src="{{ url_for('static', filename='images/certifications/generative_ai.jpg') }}" alt="Intro to Generative AI">
+          <p>Intro to Generative AI</p>
+        </a>
+      </div>
+
+      <!-- Certification 3: ChatGPT from Guvi -->
+      <div class="certification-card">
+        <a href="https://www.guvi.in/verify-certificate?id=43p73DOt5P6192T9v1&course=chatgptpro" target="_blank">
+          <img src="{{ url_for('static', filename='images/certifications/chatgpt.jpg') }}" alt="ChatGPT Certification">
+          <p>ChatGPT (Guvi)</p>
+        </a>
+      </div>
+
+      <!-- Certification 4: Cloud Essentials (Naan Mudhalvan) -->
+      <!-- Certification 4: Cloud Essentials - No credential link; clicking opens modal -->
+<div class="certification-card" id="cloudCard">
+    <img src="{{ url_for('static', filename='images/certifications/nm-cloud.png') }}" alt="Cloud Essentials">
+    <p>Cloud Essentials</p>
+  </div>
+  
+  <!-- Modal for Cloud Essentials -->
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+  
+
+      <!-- Certification 5: Algorithmic Toolbox (Coursera) -->
+      <div class="certification-card">
+        <a href="https://www.coursera.org/account/accomplishments/verify/A4Q6GBT5JAWM" target="_blank">
+          <img src="{{ url_for('static', filename='images/certifications/algorithmic_toolbox.jpg') }}" alt="Algorithmic Toolbox">
+          <p>Algorithmic Toolbox</p>
+        </a>
+      </div>
+
+      <!-- Certification 6: Other Certifications -->
+      <div class="certification-card">
+        <a href="https://www.linkedin.com/in/aakash-l-s-/details/certifications/" target="_blank">
+          <img src="{{ url_for('static', filename='images/certifications/other.jpg') }}" alt="Other Certifications">
+          <p>Other</p>
+        </a>
+      </div>
+    </div>
+  </div>
 {% endblock %}
+
+<script src="{{ url_for('static', filename='js/certifications.js') }}"></script>

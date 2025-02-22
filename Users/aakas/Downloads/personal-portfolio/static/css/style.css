@@ -412,14 +412,17 @@ ul li {
     margin-right: 20px;
 }
 
-.timeline-logo img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: 50%;
-    background: #f0f0f0;
-    padding: 5px;
-}
+
+    .timeline-logo img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border-radius: 50%;
+        background: #000; 
+        padding: 5px;
+    }
+    
+
 
 .timeline-content {
     flex: 1;
@@ -462,3 +465,289 @@ ul li {
         width: 100%;
     }
 }
+
+.achievements-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievements-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  /* Details & Summary Styling */
+  .achievement-item {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .achievement-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .achievement-item summary {
+    list-style: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .achievement-item summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Custom Dropdown Arrow */
+  .achievement-item summary::after {
+    content: "\25BC";
+    font-size: 1em;
+    color: #777;
+    transition: transform 0.3s ease;
+  }
+  
+  .achievement-item[open] summary::after {
+    transform: rotate(180deg);
+  }
+  
+  .achievement-item .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
+  /* Details Content */
+  .achievement-details {
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  /* Achievement Images */
+  .achievement-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-images img {
+    width: calc(50% - 5px);
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .achievement-images img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Achievement Description */
+  .achievement-description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Competition Cards Grid (if needed) */
+  .achievement-competitions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .competition-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .competition-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .competition-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .competition-info {
+    padding: 10px;
+  }
+  
+  .competition-info h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #007bff;
+  }
+  
+  .competition-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .competition-info small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+  }
+  
+  /* Piano Video Link Styling */
+  .piano-video {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .piano-video img {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .piano-video img:hover {
+    transform: scale(1.05);
+  }
+  
+.icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.certifications-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .certifications-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .certification-card {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .certification-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+  }
+  
+  .certification-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .certification-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Hover effects */
+  .certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .certification-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; /* On top */
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
