@@ -1,0 +1,12 @@
+{
+    "build": {
+      "builder": "nixpacks",
+      "nixpacks": {
+        "plan": {
+          "packages": ["python310", "sqlite"],
+          "start": "gunicorn -w 4 -b 0.0.0.0:5000 app:app"
+        }
+      }
+    }
+  }
+  
