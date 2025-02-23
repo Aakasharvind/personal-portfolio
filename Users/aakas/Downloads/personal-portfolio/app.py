@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect,send_file
 import sqlite3
+import os
 
 app = Flask(__name__)
 
@@ -32,6 +33,12 @@ def achievements():
 @app.route('/certifications')
 def certifications():
     return render_template('certifications.html')
+
+@app.route('/download_resume')
+def download_resume():
+    resume_path = os.path.join(app.root_path, 'static', 'resume.pdf')
+    print(resume_path)
+    return send_file(resume_path, as_attachment=True)
 
 @app.route('/blog', methods=["GET", "POST"])
 def blog():
